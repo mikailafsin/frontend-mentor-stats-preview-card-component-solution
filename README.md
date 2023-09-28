@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-In this challange, I practiced the techniques that I knew.
+In this challenge, I practiced the techniques that I knew.
 
 ### Continued development
 
