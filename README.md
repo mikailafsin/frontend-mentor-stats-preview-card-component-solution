@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub]()
-- Live Site URL: [Vercel]()
+- Solution URL: [GitHub](https://github.com/mikailafsin/frontend-mentor-stats-preview-card-component-solution)
+- Live Site URL: [Vercel](https://frontend-mentor-stats-preview-card-component-solution-sepia.vercel.app)
 
 ## My process
 
