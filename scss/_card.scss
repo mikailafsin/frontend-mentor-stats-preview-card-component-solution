@@ -1,0 +1,108 @@
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: $darkDesaturedBlue;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    @media only screen and (min-width: 1440px) {
+        flex-direction: row;
+    }
+
+    &__content {
+        padding: 2rem 1.5rem;
+        text-align: center;
+
+        @media only screen and (min-width: 1440px) {
+            padding: 5rem 7rem 5rem 5rem;
+            text-align: initial;
+            width: 50%;
+        }
+    }
+
+    &__heading {
+        color: $white;
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: 1440px) {
+            font-size: 2.125rem;
+        }
+    }
+
+    &__accent {
+        color: $softViolet;
+        font-weight: 700;
+    }
+
+    &__desc {
+        color: $slightlyTransparentWhiteMain;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+
+        @media only screen and (min-width: 1440px) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__stats {
+        @media only screen and (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__individual-stats {
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: 1440px) {
+            margin-bottom: initial;
+        }
+    }
+
+    &__stats-number {
+        color: $white;
+        margin-bottom: .5rem;
+    }
+
+    &__stats-heading {
+        font-size: .875rem;
+        color: $slightlyTransparentWhiteStat;
+        text-transform: uppercase;
+        font-family: $lexendDecaFf;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    &__img {
+        position: relative;
+
+        @media only screen and (min-width: 1440px) {
+            width: 50%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $imageOverlay;
+        }
+
+        &-desktop {
+            display: none;
+
+            @media only screen and (min-width: 1440px) {
+                display: block;
+            }
+        }
+
+        &-mobile {
+            @media only screen and (min-width: 1440px) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $white;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 1rem;
+
+    @media only screen and (min-width: 1440px) {
+        right: 2rem;
+    }
+
+    a {
+        color: $slightlyTransparentWhiteMain;
+    }
+}

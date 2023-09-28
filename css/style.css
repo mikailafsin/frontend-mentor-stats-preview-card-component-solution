@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  font-size: 13px;
+}
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: hsl(233, 47%, 7%);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin-inline: auto;
+  padding: 3rem 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.card__content {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 1440px) {
+  .card__content {
+    padding: 5rem 7rem 5rem 5rem;
+    text-align: initial;
+    width: 50%;
+  }
+}
+.card__heading {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1440px) {
+  .card__heading {
+    font-size: 2.125rem;
+  }
+}
+.card__accent {
+  color: hsl(277, 64%, 61%);
+  font-weight: 700;
+}
+.card__desc {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 1440px) {
+  .card__desc {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card__stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.card__individual-stats {
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 1440px) {
+  .card__individual-stats {
+    margin-bottom: initial;
+  }
+}
+.card__stats-number {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.5rem;
+}
+.card__stats-heading {
+  font-size: 0.875rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.card__img {
+  position: relative;
+}
+@media only screen and (min-width: 1440px) {
+  .card__img {
+    width: 50%;
+  }
+}
+.card__img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(277, 90%, 24%, 0.6);
+}
+.card__img-desktop {
+  display: none;
+}
+@media only screen and (min-width: 1440px) {
+  .card__img-desktop {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card__img-mobile {
+    display: none;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: hsl(0, 0%, 100%);
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 1440px) {
+  .attribution {
+    right: 2rem;
+  }
+}
+.attribution a {
+  color: hsla(0, 0%, 100%, 0.75);
+}/*# sourceMappingURL=style.css.map */
